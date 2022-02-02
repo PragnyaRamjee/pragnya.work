@@ -1,0 +1,23 @@
+{
+  "name": "pragnya_portfolio",
+  "version": "1.0.0",
+  "description": "A collection of work by Pragnya Ramjee, a designer and tree-climber who draws from identities as a Montessori child, Aurovillian adolescent, and IIT Guwahati undergrad, while learning to navigate grey areas.",
+  "repository": "pragnya.work",
+  "author": "Pragnya Ramjee <pragnya@iitg.ac.in>",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm-run-all build:css build:html",
+    "build:css": "npx tailwindcss -i ./src/style.css -o ./dist/style.css",
+    "build:html": "npx eleventy",
+    "watch": "watch 'npm run build' ./src"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.15"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "npm-run-all": "^4.1.5",
+    "watch": "^1.0.2"
+  }
+}
