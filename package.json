@@ -9,7 +9,7 @@
     "build": "npm-run-all build:css build:html",
     "build:css": "npx tailwindcss -i ./src/style.css -o ./dist/style.css",
     "build:html": "npx eleventy",
-    "watch": "watch 'npm run build' ./src"
+    "watch": "watch 'yarn build' ./src"
   },
   "devDependencies": {
     "postcss": "^8.4.5",
