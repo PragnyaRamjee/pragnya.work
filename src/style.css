@@ -4,29 +4,36 @@
 
 
 @font-face {
-  font-family: "Apercu";
+  font-family: "Apercu Italic";
   font-weight: normal;
   font-style: italic, oblique;
   src: url(./fonts/apercu_italic.otf)
 }
 
 @font-face {
-  font-family: "Apercu";
+  font-family: "Apercu Bold";
   font-weight: bold;
   font-style: normal;
   src: url(./fonts/apercu_bold.otf)
 }
 
 @font-face {
-  font-family: "Apercu";
-  font-weight: lighter;
+  font-family: "Apercu Light";
+  font-weight: light;
   font-style: normal;
   src: url(./fonts/apercu_light.otf)
 }
 
 @font-face {
-  font-family: "Apercu";
-  font-weight: normal;
+  font-family: "Apercu ExtraLight";
+  font-weight: 100;
+  font-style: normal;
+  src: url(./fonts/apercu_extralight.ttf);
+}
+
+@font-face {
+  font-family: "Apercu Regular";
+  font-weight: 400;
   font-style: normal;
   src: url(./fonts/apercu_regular.otf);
 }
