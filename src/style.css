@@ -71,6 +71,24 @@
 }
 
 
+.spacer-t-xl{
+  @apply pt-36;
+}
+
 .spacer-t-lg{
   @apply pt-24;
 }
+
+.spacer-t-md{
+  @apply pt-12;
+}
+
+.spacer-t-sm{
+  @apply pt-6;
+}
+
+.spacer-l-md {
+  @apply pl-12;
+}
+
+/* Note to Pragnya: We are using Tailwind's spacers 6, 12, 24, 36 rather than custom spacers */
