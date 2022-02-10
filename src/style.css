@@ -62,8 +62,8 @@
   @apply text-xs font-extralight tracking-[.25em] leading-relaxed uppercase text-blue;
 }
 
-.text-callout{
-@apply text-3xl font-bold tracking-wide leading-relaxed text-black;
+.button{
+  @apply bg-transparent border border-blue text-blue hover:bg-blue hover:text-white text-center py-4 px-4 text-button;
 }
 
 
