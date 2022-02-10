@@ -47,15 +47,19 @@
 }
 
 .text-heading-3{
-  @apply text-base font-extralight tracking-[.25em] leading-relaxed uppercase text-grey-dark;
+  @apply text-base tracking-[.25em] leading-relaxed uppercase text-grey-dark font-[50];
 }
 
 .text-body{
   @apply text-base font-normal tracking-wide leading-relaxed text-black;
 }
 
+.text-callout{
+@apply text-3xl font-bold tracking-wide leading-relaxed text-black;
+}
+
 .text-nav {
-  @apply uppercase text-sm font-light tracking-widest block py-2 pr-4 pl-3 text-grey-dark md:hover:text-blue md:p-0 md:hover:font-normal;
+  @apply uppercase text-sm font-normal tracking-widest block py-2 pr-4 pl-3 text-grey-dark md:hover:text-blue md:p-0 md:hover:font-normal;
 }
 
 .text-button{
