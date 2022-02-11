@@ -59,8 +59,9 @@
 }
 
 .text-nav {
-  @apply uppercase text-sm font-normal tracking-widest block py-2 pr-4 pl-3 text-grey-dark md:hover:text-blue md:p-0 md:hover:font-normal;
+  @apply uppercase text-sm font-normal tracking-widest inline py-2 text-grey-dark md:hover:text-blue md:p-0 md:hover:font-normal;
 }
+
 
 .text-button{
   @apply text-xs font-extralight tracking-[.25em] leading-relaxed uppercase text-blue;
