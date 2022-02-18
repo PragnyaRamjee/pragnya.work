@@ -71,5 +71,12 @@
   @apply bg-transparent border border-blue text-blue hover:bg-blue hover:text-white text-center py-4 px-4 text-button;
 }
 
+.dropdown-content {
+    min-width: 160px;
+  }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
 
 /* Note to Pragnya: We are using Tailwind's spacers 2, 6, 12, 16, 24, 36 rather than custom spacers */
