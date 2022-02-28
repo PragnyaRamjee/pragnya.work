@@ -72,11 +72,99 @@
 }
 
 .dropdown-content {
-    min-width: 160px;
+    @apply min-w-40;
   }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    @apply block;
+  }
+
+/* Mobile Menu (good lord!) */
+
+  body {
+    @apply w-screen	h-screen;
+    animation: bugfix infinite 1s;
+    -webkit-animation: bugfix infinite 1s;
+  }
+
+  @keyframes bugfix {
+    from {
+      @apply p-0;
+    }
+    to {
+      @apply p-0;
+    }
+  }
+  @-webkit-keyframes bugfix {
+    from {
+      @apply p-0;
+    }
+    to {
+      @apply p-0;
+    }
+  }
+
+  #overlay-button span {
+    @apply h-1 w-9 rounded-sm bg-black relative block;
+    transition: all 0.2s ease-in-out;
+  }
+
+  #overlay-button span:before {
+    top: -10px;
+    visibility: visible;
+  }
+  #overlay-button span:after {
+    top: 10px;
+  }
+
+  #overlay-button span:before, #overlay-button span:after {
+    @apply h-1 w-9 rounded-sm bg-black absolute;
+    content: "";
+    transition: all 0.2s ease-in-out;
+  }
+
+  input[type=checkbox] {
+    @apply hidden;
+  }
+  input[type=checkbox]:checked ~ #overlay {
+    @apply visible;
+  }
+  input[type=checkbox]:checked ~ #overlay-button:hover span, input[type=checkbox]:checked ~ #overlay-button span {
+    @apply bg-transparent;
+  }
+  input[type=checkbox]:checked ~ #overlay-button span:before {
+    transform: rotate(45deg) translate(7px, 7px);
+    opacity: 1;
+  }
+  input[type=checkbox]:checked ~ #overlay-button span:after {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+
+  #overlay-button {
+    @apply absolute;
+  }
+
+  input[type=checkbox]:checked ~ #overlay-button {
+    @apply fixed;
+  }
+
+  #overlay {
+    @apply invisible z-10 bg-white h-screen w-screen;
+  }
+  #overlay.active {
+    @apply visible;
+  }
+  #overlay ul {
+    @apply flex justify-center content-center flex-col text-center w-screen h-screen p-0 list-none;
+  }
+  #overlay ul li {
+    @apply p-4;
+  }
+  #overlay ul li a {
+    @apply text-grey-dark decoration-0 text-sm;
+  }
+  #overlay ul li a:hover {
+    @apply text-blue;
   }
 
 /* Note to Pragnya: We are using Tailwind's spacers 2, 6, 12, 16, 24, 36 rather than custom spacers */

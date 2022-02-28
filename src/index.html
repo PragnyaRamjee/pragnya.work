@@ -4,18 +4,17 @@
     <title>Pragnya Ramjee</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style type="text/css">
-    </style>
     <link rel="stylesheet" type="text/css" href="style.css"/>
   </head>
   <body class="font-sans">
+    <a name="top"></a>
     <div class="w-full max-w-5xl mx-auto px-6 md:px-0">
       <nav class="bg-white py-12">
         <div class="container flex flex-wrap justify-between items-center mx-auto">
           <a href="#" class="flex">
               <span class="uppercase self-center text-base font-bold tracking-wider text-black whitespace-nowrap dark:text-white">Pragnya Ramjee</span>
           </a>
-          <div class="md:block md:w-auto z-10" id="mobile-menu">
+          <div class="hidden md:block md:w-auto z-10" id="desktop-menu">
             <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium z-10">
               <li>
                 <div class="dropdown relative inline-block">
@@ -45,6 +44,20 @@
                 <a href="#" class="text-nav">Résumé</a>
               </li>
 
+            </ul>
+          </div>
+        </div>
+
+        <!-- Mobile menu; let's hope it works -->
+        <div class="md:hidden">
+          <input type="checkbox" id="overlay-input" />
+          <label for="overlay-input" id="overlay-button" class="block top-12 right-6 cursor-pointer z-20"><span></span></label>
+          <div id="overlay" class="fixed top-0 right-0 left-0 bottom-0">
+            <ul>
+              <li><a href="#" class="text-nav">Sprints</a></li>
+              <li><a href="#" class="text-nav">Viscom</a></li>
+              <li><a href="#" class="text-nav">Make</a></li>
+              <li><a href="#" class="text-nav">About</a></li
             </ul>
           </div>
         </div>

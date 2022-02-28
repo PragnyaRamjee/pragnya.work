@@ -17,6 +17,9 @@ module.exports = {
         'sans': ['Apercu', 'Inter', 'Arial']
       }
     },
+    minWidth: {
+      '40': '10rem',
+    }
   },
   variants: {},
   plugins: []
