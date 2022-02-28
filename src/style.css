@@ -7,21 +7,21 @@
   font-family: "Apercu Italic";
   font-weight: normal;
   font-style: italic, oblique;
-  src: url(./fonts/apercu_italic.otf)
+  src: url(./fonts/apercu_italic.otf);
 }
 
 @font-face {
   font-family: "Apercu Bold";
   font-weight: bold;
   font-style: normal;
-  src: url(./fonts/apercu_bold.otf)
+  src: url(./fonts/apercu_bold.otf);
 }
 
 @font-face {
   font-family: "Apercu Light";
   font-weight: light;
   font-style: normal;
-  src: url(./fonts/apercu_light.otf)
+  src: url(./fonts/apercu_light.otf);
 }
 
 @font-face {
