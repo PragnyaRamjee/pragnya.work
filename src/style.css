@@ -133,11 +133,11 @@
     @apply bg-transparent;
   }
   input[type=checkbox]:checked ~ #overlay-button span:before {
-    transform: rotate(45deg) translate(7px, 7px);
+    transform: rotate(45deg) translate(0px, 7px);
     opacity: 1;
   }
   input[type=checkbox]:checked ~ #overlay-button span:after {
-    transform: rotate(-45deg) translate(7px, -7px);
+    transform: rotate(-45deg) translate(0px, -7px);
   }
 
   #overlay-button {
