@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Pragnya Ramjee</title>
+    <title>{% block title %}Pragnya Ramjee{% endblock %}</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="/style.css"/>
   </head>
   <body class="font-sans">
     <a name="top"></a>
@@ -62,6 +62,7 @@
           </div>
         </div>
       </nav>
+      {% block content %}
       <div class="pt-24 pb-12 border-b border-grey-normal border-solid">
         <h1 class="text-heading-1">Namaste. I'm Pragnya —</h1>
         <div class="pt-12">
@@ -122,6 +123,7 @@
           </div>
         </div>
       </div>
+      {% endblock %}
 
       <nav id="footer" class="bg-white w-full">
         <ul class="flex flex-col md:flex-row align-center md:justify-between w-full mt-24 pt-12 pb-12  border-t border-grey-normal border-solid">
