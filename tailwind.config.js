@@ -14,7 +14,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'sans': ['Apercu', 'Inter', 'Arial']
+        'sans': ['Apercu', 'Inter', 'Arial'],
+        'serif': ['"Esteban Regular"', 'Georgia']
       }
     },
     minWidth: {
