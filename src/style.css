@@ -58,11 +58,7 @@
 }
 
 .text-body{
-  @apply text-base font-normal tracking-wide leading-relaxed text-black font-serif;
-}
-
-.text-callout{
-  @apply font-sans text-3xl font-bold tracking-wide leading-relaxed text-black;
+  @apply mt-6 text-base font-normal tracking-wide leading-relaxed text-black font-serif;
 }
 
 .text-nav {
