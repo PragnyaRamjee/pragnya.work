@@ -39,7 +39,7 @@
 }
 
 @font-face {
-  font-family: "Esteban";
+  font-family: "Esteban Regular";
   font-weight: normal;
   font-style: normal;
   src: url(./fonts/esteban_regular.ttf);
@@ -50,7 +50,7 @@
 }
 
 .text-heading-2{
-  @apply font-sans text-3xl font-normal tracking-wide leading-relaxed text-black;
+  @apply font-sans text-3xl font-medium tracking-wide leading-relaxed text-black;
 }
 
 .text-heading-3{
