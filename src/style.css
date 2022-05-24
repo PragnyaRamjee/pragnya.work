@@ -74,6 +74,23 @@
   @apply bg-transparent border border-blue text-blue hover:bg-blue hover:text-white text-center py-4 px-4 text-button;
 }
 
+/* LAYOUTING */
+/* Note to Pragnya: We are using Tailwind's spacers 2, 6 (within a text block), 12 (callouts), 16 (padding at top etc), 24 (sections on mobile), 36 (sections on web) rather than custom spacers */
+
+.section{
+  @apply pt-24 md:pt-36;
+}
+
+.subsection{
+  @apply pt-16;
+}
+
+.callout{
+  @apply text-center py-12;
+}
+
+
+
 .dropdown-content {
     @apply min-w-40;
   }
@@ -169,5 +186,3 @@
   #overlay ul li a:hover {
     @apply text-blue;
   }
-
-/* Note to Pragnya: We are using Tailwind's spacers 2, 6, 12, 16, 24, 36 rather than custom spacers */
