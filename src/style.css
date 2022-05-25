@@ -58,7 +58,7 @@
 }
 
 .text-body{
-  @apply mt-6 text-base font-normal tracking-wide leading-relaxed text-black font-serif;
+  @apply pt-6 text-base font-normal tracking-wide leading-relaxed text-black font-serif;
 }
 
 .text-nav {
