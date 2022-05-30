@@ -50,11 +50,11 @@
 }
 
 .text-heading-2{
-  @apply font-sans text-3xl font-medium tracking-wide leading-relaxed text-black;
+  @apply capitalize font-sans text-3xl font-medium tracking-wide leading-relaxed text-black;
 }
 
 .text-heading-3{
-  @apply font-sans text-base tracking-[.25em] leading-relaxed uppercase text-grey-dark font-[50];
+  @apply pt-6 font-sans text-base tracking-[.25em] leading-relaxed uppercase text-grey-dark font-[50];
 }
 
 .text-body{
