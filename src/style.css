@@ -86,7 +86,7 @@
 }
 
 .callout{
-  @apply text-center py-12;
+  @apply normal-case text-center py-12;
 }
 
 
