@@ -1,0 +1,21 @@
+{% macro p(title,imagepath,show_element='block') %}
+
+<div class="md:pt-16 flex flex-col md:flex-row">
+  <div class="w-full md:w-2/5 pt-12 md:pt-0 my-auto pb-16 md:pb-0">
+    <div class="pb-6">
+      <p class="text-heading-3 -mt-6">How might we enable traders to access & monitor data on-the-go? </p>
+    </div>
+    <div class="mt-6 pt-6 border-t border-grey-normal border-solid">
+      <p class="text-heading-2">{{ title }}</p>
+    </div>
+    <p class="text-body">Duration: 8 weeks</p>
+    <div class="pt-12" style="display: {{ show_element }}">
+      <a href="https://medium.com/@pragnya.ramjee/summer-2021-d-e-shaw-india-interaction-design-internship-9e27cf631d3e" class="button">Read blog</a>
+    </div>
+  </div>
+  <div class="w-full md:w-3/5 md:pl-12">
+    <img src="{{ imagepath }}"/>
+  </div>
+</div>
+
+{% endmacro %}
