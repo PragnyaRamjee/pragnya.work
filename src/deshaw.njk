@@ -4,6 +4,9 @@
 
 {% block content %}
 
+{% import "./template.njk" as template %}
+{{ template.p("blablab la","/images/cover_propet.png","none") }}
+
 
 <div class="md:pt-16 flex flex-col md:flex-row">
   <div class="w-full md:w-2/5 pt-12 md:pt-0 my-auto pb-16 md:pb-0">
@@ -440,7 +443,7 @@
   </p>
 </div>
 
-<div class="subsection flex flex-col md:flex-row justify-between">  
+<div class="subsection flex flex-col md:flex-row justify-between">
   <a href="#" class="button">Back home</a>
   <a href="#" class="button">Next: Smartphones & Senior Citizens</a>
 </div>
